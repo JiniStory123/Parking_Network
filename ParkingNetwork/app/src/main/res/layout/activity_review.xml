@@ -30,6 +30,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/bt_writing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="글쓰기"
@@ -57,7 +58,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="김민석 주차장(계룡) 리뷰"
+                android:text="계룡시청 주차장 리뷰"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -91,7 +92,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="사용자 이름"
+                        android:text="김민석"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
@@ -102,13 +103,14 @@
                         android:layout_height="wrap_content"
                         android:numStars="5"
                         android:stepSize="1"
-                        android:rating="3"/>
+                        android:rating="5" />
 
                     <!-- 리뷰 내용 -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="리뷰한 내용"
+                        android:text="세계 최고의 주차장입니다. "
+                        android:textSize="18dp"
                         android:textColor="@color/black" />
 
                 </LinearLayout>

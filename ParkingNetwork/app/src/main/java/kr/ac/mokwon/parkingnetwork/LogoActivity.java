@@ -22,7 +22,7 @@ public class LogoActivity extends AppCompatActivity
             @Override
             public void run() {
                 Intent intent = new Intent (getApplicationContext(), MainActivity.class);
-                startActivity(intent); //인트로 실행 후 바로 MainActivity로 넘어감.
+                startActivity(intent);
                 finish();
             }
         },1000); //1초 후 인트로 실행

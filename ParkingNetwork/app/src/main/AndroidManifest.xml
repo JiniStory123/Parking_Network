@@ -32,6 +32,15 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+            android:name=".ReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParkingInformationActivity"
+            android:exported="false" />
+        <activity
             android:name=".LogoActivity"
             android:exported="true">
             <intent-filter>
