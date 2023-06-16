@@ -32,13 +32,22 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".LogoActivity"
-            android:exported="false" />
-        <activity
             android:name=".ParkingLocaetion2"
             android:exported="false" />
         <activity
+            android:name=".ParkingInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewEditActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
