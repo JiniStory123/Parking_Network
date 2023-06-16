@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity
     // 프래그먼트 제어 변수
     MainMapFragment mainMapFragment;
     BookMarkerFragment bookMarkerFragment;
+    ParkingLocationFragment parkingLocationFragment;
     MypageActivity mypageActivity;
 
 
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity
         // 프래그먼트 설정
         mainMapFragment = new MainMapFragment();
         bookMarkerFragment = new BookMarkerFragment();
+        parkingLocationFragment = new ParkingLocationFragment();
         mypageActivity = new MypageActivity();
 
         // 초기 프래그먼트 설정
@@ -59,6 +61,14 @@ public class MainActivity extends AppCompatActivity
                         getSupportActionBar().setCustomView(R.layout.title_bookmarker);
                         getSupportActionBar().show();
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment, bookMarkerFragment).commit();
+                        return true;
+
+                    case R.id.item3:
+                        getSupportActionBar().setDisplayShowTitleEnabled(false);
+                        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+                        getSupportActionBar().setCustomView(R.layout.title_location);
+                        getSupportActionBar().show();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment, parkingLocationFragment).commit();
                         return true;
 
                     case R.id.item4:
